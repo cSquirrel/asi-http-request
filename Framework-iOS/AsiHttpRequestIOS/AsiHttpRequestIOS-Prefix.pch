@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'AsiHttpRequestIOS' target in the 'AsiHttpRequestIOS' project
+// Prefix header for all source files of the 'ASIHTTPRequestIOS' target in the 'ASIHTTPRequestIOS' project
 //
 
 #ifdef __OBJC__
