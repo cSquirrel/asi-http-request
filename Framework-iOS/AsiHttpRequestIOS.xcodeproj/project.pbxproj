@@ -29,8 +29,8 @@
 		3218F939141A221300002957 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218F925141A221300002957 /* ASIDataDecompressor.m */; };
 		3218F93A141A221300002957 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3218F926141A221300002957 /* ASIDataCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3218F93B141A221300002957 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218F927141A221300002957 /* ASIDataCompressor.m */; };
-		3218F93E141A221F00002957 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3218F93C141A221F00002957 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3218F93F141A221F00002957 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218F93D141A221F00002957 /* Reachability.m */; };
+		3218F93E141A221F00002957 /* ASIHTTPReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3218F93C141A221F00002957 /* ASIHTTPReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3218F93F141A221F00002957 /* ASIHTTPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3218F93D141A221F00002957 /* ASIHTTPReachability.m */; };
 		3218F945141A23ED00002957 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3218F944141A23ED00002957 /* CFNetwork.framework */; };
 		3218F948141A23F800002957 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3218F947141A23F800002957 /* SystemConfiguration.framework */; };
 		3218F94A141A240200002957 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3218F949141A240200002957 /* MobileCoreServices.framework */; };
@@ -64,8 +64,8 @@
 		3218F925141A221300002957 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = ../../Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
 		3218F926141A221300002957 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ../../Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
 		3218F927141A221300002957 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = ../../Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
-		3218F93C141A221F00002957 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../External/Reachability/Reachability.h; sourceTree = "<group>"; };
-		3218F93D141A221F00002957 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../External/Reachability/Reachability.m; sourceTree = "<group>"; };
+		3218F93C141A221F00002957 /* ASIHTTPReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPReachability.h; path = ../../External/Reachability/ASIHTTPReachability.h; sourceTree = "<group>"; };
+		3218F93D141A221F00002957 /* ASIHTTPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPReachability.m; path = ../../External/Reachability/ASIHTTPReachability.m; sourceTree = "<group>"; };
 		3218F944141A23ED00002957 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3218F947141A23F800002957 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3218F949141A240200002957 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -162,8 +162,8 @@
 		3218F940141A222300002957 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				3218F93C141A221F00002957 /* Reachability.h */,
-				3218F93D141A221F00002957 /* Reachability.m */,
+				3218F93C141A221F00002957 /* ASIHTTPReachability.h */,
+				3218F93D141A221F00002957 /* ASIHTTPReachability.m */,
 			);
 			name = Reachability;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				3218F936141A221300002957 /* ASIDownloadCache.h in Headers */,
 				3218F938141A221300002957 /* ASIDataDecompressor.h in Headers */,
 				3218F93A141A221300002957 /* ASIDataCompressor.h in Headers */,
-				3218F93E141A221F00002957 /* Reachability.h in Headers */,
+				3218F93E141A221F00002957 /* ASIHTTPReachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 				3218F937141A221300002957 /* ASIDownloadCache.m in Sources */,
 				3218F939141A221300002957 /* ASIDataDecompressor.m in Sources */,
 				3218F93B141A221300002957 /* ASIDataCompressor.m in Sources */,
-				3218F93F141A221F00002957 /* Reachability.m in Sources */,
+				3218F93F141A221F00002957 /* ASIHTTPReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
